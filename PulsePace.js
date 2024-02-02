@@ -60,8 +60,9 @@
         const shareMessage = `I just recorded a time of ${formattedTime} using the Unique Stopwatch web app! Check it out!`;
         window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareMessage)}`, "_blank");
     }
+    
 
-    // Voice Control
+    // Keyboard Control
     document.addEventListener("keyup", function(event) {
         if (event.key === " ") { // Spacebar for Start/Stop
             startStop();
